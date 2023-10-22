@@ -1,7 +1,7 @@
 package com.ahmetkemal.model;
 
-import com.ahmetkemal.model.gamedata.character.Character;
-import com.ahmetkemal.model.gamedata.weapon.Weapon;
+import com.ahmetkemal.model.game.gamedata.character.Character;
+import com.ahmetkemal.model.game.gamedata.weapon.Weapon;
 
 import java.util.List ;
 

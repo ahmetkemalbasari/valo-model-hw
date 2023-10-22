@@ -1,9 +1,9 @@
-package com.ahmetkemal.model.gamedata.character.impl;
+package com.ahmetkemal.model.game.gamedata.character.impl;
 
 
-import com.ahmetkemal.model.gamedata.character.Character;
-import com.ahmetkemal.model.gamedata.character.Gender;
-import com.ahmetkemal.model.gamedata.character.Role;
+import com.ahmetkemal.model.game.gamedata.character.Character;
+import com.ahmetkemal.model.game.gamedata.character.Gender;
+import com.ahmetkemal.model.game.gamedata.character.Role;
 
 public class Sova extends Character {
 

@@ -1,7 +1,7 @@
-package com.ahmetkemal.model.gamedata.weapon.impl;
+package com.ahmetkemal.model.game.gamedata.weapon.impl;
 
-import com.ahmetkemal.model.gamedata.weapon.Type;
-import com.ahmetkemal.model.gamedata.weapon.Weapon;
+import com.ahmetkemal.model.game.gamedata.weapon.Type;
+import com.ahmetkemal.model.game.gamedata.weapon.Weapon;
 
 public class Classic extends Weapon {
     public Classic(){

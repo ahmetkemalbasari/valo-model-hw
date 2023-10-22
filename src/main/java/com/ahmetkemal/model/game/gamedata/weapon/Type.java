@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.gamedata.weapon;
+package com.ahmetkemal.model.game.gamedata.weapon;
 
 public enum Type {
     SIDEARMS,

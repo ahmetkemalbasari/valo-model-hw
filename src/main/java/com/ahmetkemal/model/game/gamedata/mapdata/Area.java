@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.gamedata.mapdata;
+package com.ahmetkemal.model.game.gamedata.mapdata;
 
 public class Area {
 
