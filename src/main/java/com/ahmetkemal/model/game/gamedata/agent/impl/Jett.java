@@ -4,6 +4,9 @@ package com.ahmetkemal.model.game.gamedata.agent.impl;
 import com.ahmetkemal.model.game.gamedata.agent.Agent;
 import com.ahmetkemal.model.game.gamedata.agent.Gender;
 import com.ahmetkemal.model.game.gamedata.agent.Role;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.DashSkill;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.SmokeSkill;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.SpecialWeaponSkill;
 
 public class Jett extends Agent {
 
@@ -13,16 +16,16 @@ public class Jett extends Agent {
 
     @Override
     public void skillOne() {
-        System.out.println("Jett zıpladı");
+        skill(new DashSkill());
     }
 
     @Override
     public void skillTwo() {
-        System.out.println("Jett sis attı");
+        skill(new SmokeSkill());
     }
 
     @Override
     public void ultimate() {
-        System.out.println("Jett bıçaklarını çıkardı");
+        skill(new SpecialWeaponSkill());
     }
 }

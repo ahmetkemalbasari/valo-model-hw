@@ -4,25 +4,27 @@ package com.ahmetkemal.model.game.gamedata.agent.impl;
 import com.ahmetkemal.model.game.gamedata.agent.Agent;
 import com.ahmetkemal.model.game.gamedata.agent.Gender;
 import com.ahmetkemal.model.game.gamedata.agent.Role;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.TrapSkill;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.VisionSkill;
 
-public class Sage extends Agent {
+public class Cypher extends Agent {
 
-    public Sage(){
+    public Cypher(){
         super("Cypher", 35, Gender.MALE, Role.SENTINEL);
     }
 
     @Override
     public void skillOne() {
-        System.out.println("Cypher kafes attı");
+        skill(new TrapSkill());
     }
 
     @Override
     public void skillTwo() {
-        System.out.println("Cypher tuzak attı");
+        skill(new TrapSkill());
     }
 
     @Override
     public void ultimate() {
-        System.out.println("Cypher diğer oyuncuların konumunu gösterdi");
+        skill(new VisionSkill());
     }
 }
