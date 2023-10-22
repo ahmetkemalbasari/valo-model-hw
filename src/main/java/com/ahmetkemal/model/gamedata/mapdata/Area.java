@@ -25,5 +25,4 @@ public class Area {
     public void setWidth(float width) {
         this.width = width;
     }
-
 }
