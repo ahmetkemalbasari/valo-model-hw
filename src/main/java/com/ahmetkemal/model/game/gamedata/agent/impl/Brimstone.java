@@ -4,6 +4,8 @@ package com.ahmetkemal.model.game.gamedata.agent.impl;
 import com.ahmetkemal.model.game.gamedata.agent.Agent;
 import com.ahmetkemal.model.game.gamedata.agent.Gender;
 import com.ahmetkemal.model.game.gamedata.agent.Role;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.AreaDamageSkill;
+import com.ahmetkemal.model.game.gamedata.agent.skill.impl.SmokeSkill;
 
 public class Brimstone extends Agent {
 
@@ -13,12 +15,13 @@ public class Brimstone extends Agent {
 
     @Override
     public void skillOne() {
-        System.out.println("Brimstone molotof hazırladı");
+        skill(new SmokeSkill());
     }
 
     @Override
     public void skillTwo() {
-        System.out.println("Brimstone smoke attı");
+
+        skill(new AreaDamageSkill());
     }
 
     @Override

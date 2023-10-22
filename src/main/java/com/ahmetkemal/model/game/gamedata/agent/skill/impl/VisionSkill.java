@@ -1,4 +1,10 @@
 package com.ahmetkemal.model.game.gamedata.agent.skill.impl;
 
-public class VisionSkill {
+import com.ahmetkemal.model.game.gamedata.agent.skill.Skill;
+
+public class VisionSkill implements Skill {
+    @Override
+    public void run() {
+        System.out.println("Görüş skill'i kullanıldı");
+    }
 }
