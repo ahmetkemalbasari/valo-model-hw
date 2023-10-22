@@ -1,6 +1,6 @@
 package com.ahmetkemal.model.gamedata.mapdata;
 
-public abstract class Area {
+public class Area {
 
     private float length;
     private float width;
