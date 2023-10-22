@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.game.gamedata.character;
+package com.ahmetkemal.model.game.gamedata.agent;
 
 public enum Role {
 

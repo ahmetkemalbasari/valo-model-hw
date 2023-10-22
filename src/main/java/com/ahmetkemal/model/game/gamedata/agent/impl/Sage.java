@@ -1,11 +1,11 @@
-package com.ahmetkemal.model.game.gamedata.character.impl;
+package com.ahmetkemal.model.game.gamedata.agent.impl;
 
 
-import com.ahmetkemal.model.game.gamedata.character.Character;
-import com.ahmetkemal.model.game.gamedata.character.Gender;
-import com.ahmetkemal.model.game.gamedata.character.Role;
+import com.ahmetkemal.model.game.gamedata.agent.Agent;
+import com.ahmetkemal.model.game.gamedata.agent.Gender;
+import com.ahmetkemal.model.game.gamedata.agent.Role;
 
-public class Sage extends Character {
+public class Sage extends Agent {
 
     public Sage(){
         super("Cypher", 35, Gender.MALE, Role.SENTINEL);

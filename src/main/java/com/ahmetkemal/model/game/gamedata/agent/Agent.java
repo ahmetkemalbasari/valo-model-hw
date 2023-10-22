@@ -1,13 +1,17 @@
-package com.ahmetkemal.model.game.gamedata.character;
+package com.ahmetkemal.model.game.gamedata.agent;
 
-public abstract class Character {
+import com.ahmetkemal.model.game.gamedata.agent.skill.Skill;
+import java.util.List;
+
+public abstract class Agent {
 
     private String name ;
     private int age;
     private Gender gender;
     private Role role;
+    private List<Skill> skills;
 
-    public Character(String name, int age, Gender gender, Role role){
+    public Agent(String name, int age, Gender gender, Role role){
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -46,6 +50,10 @@ public abstract class Character {
         this.role = role;
     }
 
+
+    public void skill(Skill skill){
+        skill.run();
+    }
     public abstract void skillOne();
     public abstract void skillTwo();
     public abstract void ultimate();

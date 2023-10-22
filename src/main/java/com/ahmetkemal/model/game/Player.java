@@ -1,6 +1,7 @@
 package com.ahmetkemal.model.game;
 
-import com.ahmetkemal.model.game.gamedata.character.Character;
+import com.ahmetkemal.model.User;
+import com.ahmetkemal.model.game.gamedata.agent.Agent;
 import com.ahmetkemal.model.game.gamedata.weapon.Weapon;
 import java.util.List;
 
@@ -10,12 +11,12 @@ public class Player {
     private int health = 100;
     private int shield = 0;
     private User user;
-    private Character character;
+    private Agent agent;
     private List<Weapon> weapons;
 
-    public Player(User user, Character character, List<Weapon> weapons) {
+    public Player(User user, Agent agent, List<Weapon> weapons) {
             this.user = user;
-            this.character = character;
+            this.agent = agent;
             this.weapons = weapons;
     }
 
@@ -51,12 +52,12 @@ public class Player {
         this.user = user;
     }
 
-    public Character getCharacter() {
-        return character;
+    public Agent getCharacter() {
+        return agent;
     }
 
-    public void setCharacter(Character character) {
-        this.character = character;
+    public void setCharacter(Agent agent) {
+        this.agent = agent;
     }
 
     public List<Weapon> getWeapons() {

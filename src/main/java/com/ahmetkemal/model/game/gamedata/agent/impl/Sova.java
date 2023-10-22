@@ -1,11 +1,11 @@
-package com.ahmetkemal.model.game.gamedata.character.impl;
+package com.ahmetkemal.model.game.gamedata.agent.impl;
 
 
-import com.ahmetkemal.model.game.gamedata.character.Character;
-import com.ahmetkemal.model.game.gamedata.character.Gender;
-import com.ahmetkemal.model.game.gamedata.character.Role;
+import com.ahmetkemal.model.game.gamedata.agent.Agent;
+import com.ahmetkemal.model.game.gamedata.agent.Gender;
+import com.ahmetkemal.model.game.gamedata.agent.Role;
 
-public class Sova extends Character {
+public class Sova extends Agent {
 
     public Sova(){
         super("Sova", 30, Gender.MALE, Role.INITIATOR);

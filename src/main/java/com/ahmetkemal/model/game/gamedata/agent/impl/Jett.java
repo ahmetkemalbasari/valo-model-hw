@@ -1,11 +1,11 @@
-package com.ahmetkemal.model.game.gamedata.character.impl;
+package com.ahmetkemal.model.game.gamedata.agent.impl;
 
 
-import com.ahmetkemal.model.game.gamedata.character.Character;
-import com.ahmetkemal.model.game.gamedata.character.Gender;
-import com.ahmetkemal.model.game.gamedata.character.Role;
+import com.ahmetkemal.model.game.gamedata.agent.Agent;
+import com.ahmetkemal.model.game.gamedata.agent.Gender;
+import com.ahmetkemal.model.game.gamedata.agent.Role;
 
-public class Jett extends Character {
+public class Jett extends Agent {
 
     public Jett(){
         super("Jett", 20, Gender.FEMALE, Role.DUELIST);

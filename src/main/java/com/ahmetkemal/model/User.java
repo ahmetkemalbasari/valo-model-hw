@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.game;
+package com.ahmetkemal.model;
 
 public class User {
 
