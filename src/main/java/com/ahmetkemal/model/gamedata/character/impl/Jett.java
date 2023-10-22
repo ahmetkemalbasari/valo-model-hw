@@ -1,9 +1,9 @@
-package com.ahmetkemal.model.gamedata.characterdata.characters;
+package com.ahmetkemal.model.gamedata.character.impl;
 
 
-import com.ahmetkemal.model.gamedata.characterdata.Character;
-import com.ahmetkemal.model.gamedata.characterdata.Gender;
-import com.ahmetkemal.model.gamedata.characterdata.Role;
+import com.ahmetkemal.model.gamedata.character.Character;
+import com.ahmetkemal.model.gamedata.character.Gender;
+import com.ahmetkemal.model.gamedata.character.Role;
 
 public class Jett extends Character {
 

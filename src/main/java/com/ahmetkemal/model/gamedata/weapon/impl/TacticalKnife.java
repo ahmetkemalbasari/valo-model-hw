@@ -1,7 +1,7 @@
-package com.ahmetkemal.model.gamedata.weapondata.weapons;
+package com.ahmetkemal.model.gamedata.weapon.impl;
 
-import com.ahmetkemal.model.gamedata.weapondata.Type;
-import com.ahmetkemal.model.gamedata.weapondata.Weapon;
+import com.ahmetkemal.model.gamedata.weapon.Type;
+import com.ahmetkemal.model.gamedata.weapon.Weapon;
 
 public class TacticalKnife extends Weapon {
     public TacticalKnife(){

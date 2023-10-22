@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.gamedata.weapondata;
+package com.ahmetkemal.model.gamedata.weapon;
 
 public abstract class Weapon {
     private String name;

@@ -1,4 +1,4 @@
-package com.ahmetkemal.model.gamedata.characterdata;
+package com.ahmetkemal.model.gamedata.character;
 
 public enum Gender {
 
