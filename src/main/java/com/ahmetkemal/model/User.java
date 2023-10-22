@@ -66,5 +66,14 @@ public class User {
         this.rank = rank;
     }
 
-
+    public void checkRankUp(){
+        if(getRankPoint()/100 >= 100){
+            System.out.println("Rank atladın");
+            setRankPoint(getRankPoint() - 100);
+        }
+        else if(getRankPoint()/100 <= 0){
+            System.out.println("Rank düştün");
+            setRankPoint(100 + getRankPoint());
+        }
+    }
 }
