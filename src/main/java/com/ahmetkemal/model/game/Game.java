@@ -1,15 +1,18 @@
 package com.ahmetkemal.model.game;
 
+import com.ahmetkemal.model.game.gamedata.mapdata.Map;
 import java.util.List;
 
 public class Game {
 
     private List<Player> teamOnePlayers, teamTwoPlayers;
     private int roundCount = 1, teamOneScore = 0, teamTwoScore = 0;
+    private Map map;
 
-    public Game(List<Player> teamOnePlayers, List<Player> teamTwoPlayers){
+    public Game(List<Player> teamOnePlayers, List<Player> teamTwoPlayers, Map map){
         this.teamOnePlayers = teamOnePlayers;
         this.teamTwoPlayers = teamTwoPlayers;
+        this.map = map;
     }
 
     public List<Player> getTeamOnePlayers() {
@@ -50,6 +53,14 @@ public class Game {
 
     public void setTeamTwoScore(int teamTwoScore) {
         this.teamTwoScore = teamTwoScore;
+    }
+
+    public Map getMap() {
+        return map;
+    }
+
+    public void setMap(Map map) {
+        this.map = map;
     }
 
     public void win(){
