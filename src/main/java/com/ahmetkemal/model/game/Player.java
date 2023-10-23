@@ -15,9 +15,9 @@ public class Player {
     private List<Weapon> weapons;
 
     public Player(User user, Agent agent, List<Weapon> weapons) {
-            this.user = user;
-            this.agent = agent;
-            this.weapons = weapons;
+        this.user = user;
+        this.agent = agent;
+        this.weapons = weapons;
     }
 
     public int getCredit() {
@@ -66,5 +66,14 @@ public class Player {
 
     public void setWeapons(List<Weapon> weapons) {
         this.weapons = weapons;
+    }
+
+    public Weapon buyWeapon(Weapon weapon) {
+        if (weapon.getPrice() <= this.getCredit()) {
+            this.setCredit(getCredit() - weapon.getPrice());
+            return weapon;
+        }
+        System.out.println("Paranız " + weapon.getName() + " için yeterli değil");
+        return null;
     }
 }
