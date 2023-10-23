@@ -9,6 +9,7 @@ import java.util.List ;
 
 public class Valorant {
 
+    private List<User> users;
     private List<Agent> agents;
     private List<Weapon> weapons;
     private List<Map> maps;
